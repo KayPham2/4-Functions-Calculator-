@@ -1,0 +1,32 @@
+     Assembly listing for: MCALC2.mas
+                Assembled: Thu Dec 10 16:17:56 EST 2020
+
+000 5000 |         INPUT             
+001 2009 |         STORE X           
+002 5000 |         INPUT             
+003 200A |         STORE Y           
+004 1009 |         LOAD X            
+005 300A |         ADD Y             
+006 200B |         STORE Z           
+007 6000 |         OUTPUT            
+008 7000 |         HALT              
+         |                          
+009 0000 |  X      DEC 0             
+00A 0000 |  Y      DEC 0             
+00B 0000 |  Z      DEC 0             
+         |                          
+         |                          
+         |                          
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          X      |   009   | 001, 004
+          Y      |   00A   | 003, 005
+          Z      |   00B   | 006
+         --------------------------------------------------
+
+
